@@ -23,5 +23,6 @@ Un portfolio moderne et élégant pour vidéographe créé avec Next.js 15, Type
 
 ---
 
-Créé par aely.dev pour les créateurs vidéo
+Créé par [aely.dev](https://www.aely.dev) pour les créateurs vidéo
+
 © 2025 - 2026
