@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Play, ArrowRight, Star, Award, Users, Film } from 'lucide-react';
+import { ArrowRight, Award, Film, Play, Users } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Home() {

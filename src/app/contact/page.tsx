@@ -63,6 +63,25 @@ export default function Contact() {
     },
   ];
 
+  const questions = [
+    {
+      question: "Quel est le délai de livraison moyen ?",
+      answer: "Le délai varie selon la complexité du projet. Pour un court-métrage simple, comptez 2-3 semaines. Pour des projets plus complexes, cela peut aller jusqu'à 6-8 semaines."
+    },
+    {
+      question: "Proposez-vous des révisions ?",
+      answer: "Oui, j'inclus généralement 2-3 révisions dans mes forfaits pour m'assurer que le résultat final correspond parfaitement à vos attentes."
+    },
+    {
+      question: "Travaillez-vous en équipe ?",
+      answer: "Je peux travailler seul ou en équipe selon les besoins du projet. J'ai un réseau de professionnels (monteurs, coloristes, musiciens) que je peux mobiliser."
+    },
+    {
+      question: "Quels formats de livraison proposez-vous ?",
+      answer: "Je livre dans tous les formats standards (MP4, MOV, AVI) et en différentes résolutions selon vos besoins (HD, 4K, etc.)."
+    }
+  ];
+
   const projectTypes = [
     'Publicité / Commercial',
     'Mariage',
@@ -309,24 +328,7 @@ export default function Contact() {
           </motion.div>
 
           <div className="space-y-6">
-            {[
-              {
-                question: "Quel est le délai de livraison moyen ?",
-                answer: "Le délai varie selon la complexité du projet. Pour un court-métrage simple, comptez 2-3 semaines. Pour des projets plus complexes, cela peut aller jusqu'à 6-8 semaines."
-              },
-              {
-                question: "Proposez-vous des révisions ?",
-                answer: "Oui, j'inclus généralement 2-3 révisions dans mes forfaits pour m'assurer que le résultat final correspond parfaitement à vos attentes."
-              },
-              {
-                question: "Travaillez-vous en équipe ?",
-                answer: "Je peux travailler seul ou en équipe selon les besoins du projet. J'ai un réseau de professionnels (monteurs, coloristes, musiciens) que je peux mobiliser."
-              },
-              {
-                question: "Quels formats de livraison proposez-vous ?",
-                answer: "Je livre dans tous les formats standards (MP4, MOV, AVI) et en différentes résolutions selon vos besoins (HD, 4K, etc.)."
-              }
-            ].map((faq, index) => (
+            {questions.map((faq, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}

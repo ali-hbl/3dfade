@@ -26,7 +26,7 @@ export default function Creations() {
       views: '125K',
       date: '2024',
       thumbnail: '/api/placeholder/600/400',
-      description: 'Une campagne publicitaire sophistiquée mettant en valeur l\'élégance et le raffinement.',
+      description: 'Une campagne publicitaire sophistiquée mettant en valeur l&apos;élégance et le raffinement.',
     },
     {
       id: 2,
@@ -46,7 +46,7 @@ export default function Creations() {
       views: '256K',
       date: '2024',
       thumbnail: '/api/placeholder/600/400',
-      description: 'Un clip musical créatif explorant les thèmes de l\'introspection et de la croissance personnelle.',
+      description: 'Un clip musical créatif explorant les thèmes de l&apos;introspection et de la croissance personnelle.',
     },
     {
       id: 4,
@@ -66,7 +66,7 @@ export default function Creations() {
       views: '45K',
       date: '2023',
       thumbnail: '/api/placeholder/600/400',
-      description: 'Présentation dynamique d\'une startup innovante dans le domaine de la technologie.',
+      description: 'Présentation dynamique d&apos;une startup innovante dans le domaine de la technologie.',
     },
     {
       id: 6,
@@ -219,7 +219,7 @@ export default function Creations() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl font-bold font-playfair text-white mb-6">
-              Prêt à créer quelque chose d'extraordinaire ?
+              Prêt à créer quelque chose ensemble ?
             </h2>
             <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
               Chaque projet est une nouvelle aventure créative. Discutons de votre vision 
