@@ -1,7 +1,7 @@
+import Navigation from "@/components/Navigation";
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import Navigation from "@/components/Navigation";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -18,10 +18,23 @@ export const metadata: Metadata = {
   description: "Découvrez mes créations vidéo professionnelles. Portfolio d'un vidéographe passionné par l'art cinématographique et la narration visuelle.",
   keywords: "vidéographe, portfolio, cinéma, vidéo, création, montage, réalisation",
   authors: [{ name: "Vidéographe Portfolio" }],
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "Portfolio Vidéographe | Créations Cinématographiques",
     description: "Découvrez mes créations vidéo professionnelles. Portfolio d'un vidéographe passionné par l'art cinématographique et la narration visuelle.",
     type: "website",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "3DFade - Portfolio Vidéographe",
+      },
+    ],
   },
 };
 

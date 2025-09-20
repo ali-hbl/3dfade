@@ -1,6 +1,7 @@
 'use client';
 
 import { Film, Mail, Menu, User, Video, X } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -35,9 +36,15 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-red-500 to-orange-500 rounded-full flex items-center justify-center">
-              <Video className="w-5 h-5 text-white" />
+          <Link href="/" className="flex items-center space-x-3">
+            <div className="relative w-10 h-10">
+              <Image
+                src="/logo.png"
+                alt="3DFade Logo"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
             <span className="text-xl font-bold font-playfair">3DFade</span>
           </Link>
