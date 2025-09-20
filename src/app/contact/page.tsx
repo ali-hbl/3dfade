@@ -46,7 +46,7 @@ export default function Contact() {
     {
       icon: Mail,
       title: 'Email',
-      details: 'contact@3dfade.com',
+      details: 'thirdfade@gmail.com',
       description: 'Réponse sous 24h',
     },
     {
