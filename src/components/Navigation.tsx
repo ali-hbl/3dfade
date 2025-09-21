@@ -40,13 +40,13 @@ const Navigation = () => {
             <div className="relative w-10 h-10">
               <Image
                 src="/logo.png"
-                alt="3DFade Logo"
+                alt="3RDFade Logo"
                 fill
                 className="object-contain"
                 priority
               />
             </div>
-            <span className="text-xl font-bold font-playfair">3DFade</span>
+            <span className="text-xl font-bold font-playfair">3RDFade</span>
           </Link>
 
           {/* Desktop Navigation */}

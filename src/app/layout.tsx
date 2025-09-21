@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "3DFade - Portfolio Vidéographe",
+        alt: "3RDFade - Portfolio Vidéographe",
       },
     ],
   },
