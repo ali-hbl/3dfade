@@ -15,17 +15,17 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio Vidéographe | Créations Cinématographiques",
+  title: "3RD FADE | Créations vidéos",
   description: "Découvrez mes créations vidéo professionnelles. Portfolio d'un vidéographe passionné par l'art cinématographique et la narration visuelle.",
-  keywords: "vidéographe, portfolio, cinéma, vidéo, création, montage, réalisation",
-  authors: [{ name: "Vidéographe Portfolio" }],
+  keywords: "vidéographe, portfolio, cinéma, vidéo, création, montage, réalisation, edit, capcut",
+  authors: [{ name: "3RD FADE" }],
   icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",
     apple: "/logo.png",
   },
   openGraph: {
-    title: "Portfolio Vidéographe | Créations Cinématographiques",
+    title: "3RD FADE | Créations Cinématographiques",
     description: "Découvrez mes créations vidéo professionnelles. Portfolio d'un vidéographe passionné par l'art cinématographique et la narration visuelle.",
     type: "website",
     images: [
