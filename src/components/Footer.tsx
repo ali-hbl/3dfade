@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { ArrowUp, ExternalLink, Instagram, Mail, MapPin, Phone, Youtube } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -57,14 +56,14 @@ const Footer = () => {
                 className="space-y-6"
               >
                 <Link href="/" className="flex items-center space-x-3">
-                  <div className="relative w-10 h-10">
+                  {/* <div className="relative w-40 h-40">
                     <Image
-                      src="/logo.png"
+                      src="/3RD_FADE_TRANSPARENT.png"
                       alt="3rd Fade Logo"
                       fill
                       className="object-contain"
                     />
-                  </div>
+                  </div> */}
                   <span className="text-2xl font-bold font-playfair text-white">3rd Fade</span>
                 </Link>
                 <p className="text-gray-400 leading-relaxed">

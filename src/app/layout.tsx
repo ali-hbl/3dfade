@@ -18,12 +18,10 @@ export const metadata: Metadata = {
   title: "3rd Fade | Créations vidéos",
   description: "Découvrez mes créations vidéo professionnelles. Portfolio d'un vidéographe passionné par l'art cinématographique et la narration visuelle.",
   keywords: "vidéographe, portfolio, cinéma, vidéo, création, montage, réalisation, edit, capcut",
-  authors: [{ name: "3rd Fade" }],
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: '/favicon.ico',
   },
+  authors: [{ name: "3rd Fade" }],
   openGraph: {
     title: "3rd Fade | Créations Cinématographiques",
     description: "Découvrez mes créations vidéo professionnelles. Portfolio d'un vidéographe passionné par l'art cinématographique et la narration visuelle.",

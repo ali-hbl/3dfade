@@ -37,16 +37,16 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="relative w-10 h-10">
+            <div className="relative w-40 h-40">
               <Image
-                src="/logo.png"
+                src="/3RD_FADE_TRANSPARENT.png"
                 alt="3rd Fade Logo"
                 fill
                 className="object-contain"
                 priority
               />
             </div>
-            <span className="text-xl font-bold font-playfair">3rd Fade</span>
+            {/* <span className="text-xl font-bold font-playfair">3rd Fade</span> */}
           </Link>
 
           {/* Desktop Navigation */}
