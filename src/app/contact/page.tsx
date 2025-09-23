@@ -23,24 +23,39 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Ici vous pouvez ajouter la logique d'envoi du formulaire
-    console.log('Form submitted:', formData);
-    setIsSubmitted(true);
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        project: '',
-        budget: '',
-        message: '',
+  
+    try {
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
       });
-    }, 3000);
+  
+      const result = await res.json();
+  
+      if (result.message) {
+        setIsSubmitted(true);
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            project: '',
+            budget: '',
+            message: '',
+          });
+        }, 3000);
+      } else {
+        alert('Erreur: ' + (result.error || 'Erreur inconnue'));
+      }
+    } catch (error) {
+      alert('Erreur lors de l’envoi du formulaire : ' + error);
+    }
   };
+  
 
   const contactInfo = [
     {
