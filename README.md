@@ -1,4 +1,4 @@
-# Videographer Portfolio – 3RDFade  
+# Videographer Portfolio – 3rd Fade  
 
 A modern and responsive portfolio website for showcasing video projects. Built with **Next.js**, **TypeScript**, and **Tailwind CSS**.  
 

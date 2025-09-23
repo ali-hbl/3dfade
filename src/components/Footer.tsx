@@ -60,12 +60,12 @@ const Footer = () => {
                   <div className="relative w-10 h-10">
                     <Image
                       src="/logo.png"
-                      alt="3RDFade Logo"
+                      alt="3rd Fade Logo"
                       fill
                       className="object-contain"
                     />
                   </div>
-                  <span className="text-2xl font-bold font-playfair text-white">3RDFade</span>
+                  <span className="text-2xl font-bold font-playfair text-white">3rd Fade</span>
                 </Link>
                 <p className="text-gray-400 leading-relaxed">
                   Créateur de rêves visuels. Je transforme vos idées en histoires 
