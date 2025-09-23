@@ -183,11 +183,12 @@ const Footer = () => {
               <div className="flex items-center space-x-2 text-gray-400 text-sm">
                 <span className="text-xs">&copy;</span>
                 <span>{new Date().getFullYear()}</span>
+                <span>Developed by</span>
                 <a
                   href="https://www.aely.dev"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center space-x-1 text-gray-400 hover:text-white transition-colors duration-200"
+                  className="group flex items-center space-x-1 hover:text-white transition-colors duration-200 text-blue-300"
                 >
                   <span className="font-medium">aely.dev</span>
                   <ExternalLink className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
