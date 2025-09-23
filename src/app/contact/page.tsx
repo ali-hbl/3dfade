@@ -25,37 +25,43 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-  
+
     try {
-      const res = await fetch('/api/send-email', {
+      const res = await fetch('/actions/sendEmail.js', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
-  
-      const result = await res.json();
-  
-      if (result.message) {
-        setIsSubmitted(true);
-        setTimeout(() => {
-          setIsSubmitted(false);
-          setFormData({
-            name: '',
-            email: '',
-            phone: '',
-            project: '',
-            budget: '',
-            message: '',
-          });
-        }, 3000);
-      } else {
-        alert('Erreur: ' + (result.error || 'Erreur inconnue'));
+
+      const text = await res.text();
+      console.log('Réponse texte brute:', text);
+
+      try {
+        const json = JSON.parse(text);
+        if (json.message) {
+          setIsSubmitted(true);
+          setTimeout(() => {
+            setIsSubmitted(false);
+            setFormData({
+              name: '',
+              email: '',
+              phone: '',
+              project: '',
+              budget: '',
+              message: '',
+            });
+          }, 3000);
+        } else {
+          alert('Erreur : ' + (json.error || 'Erreur non spécifiée'));
+        }
+      } catch {
+        alert('La réponse du serveur n’est pas un JSON valide.');
       }
+
     } catch (error) {
       alert('Erreur lors de l’envoi du formulaire : ' + error);
     }
   };
-  
 
   const contactInfo = [
     {
