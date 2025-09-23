@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Award, Camera, Clock, Edit3, Star, Users, Video } from 'lucide-react';
+import Image from 'next/image';
 
 export default function About() {
   const skills = [
@@ -44,7 +45,7 @@ export default function About() {
               À propos de moi
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Passionné par l&apos;art cinématographique depuis plus de 10 ans, 
+              Passionné par l'art cinématographique depuis plus de 10 ans, 
               je crée des histoires visuelles qui marquent les esprits.
             </p>
           </motion.div>
@@ -67,16 +68,16 @@ export default function About() {
               <div className="space-y-6 text-gray-300">
                 <p className="text-lg leading-relaxed">
                   Tout a commencé il y a plus de 10 ans avec une simple caméra et une passion 
-                  dévorante pour raconter des histoires. Depuis, j&apos;ai eu le privilège de 
+                  dévorante pour raconter des histoires. Depuis, j'ai eu le privilège de 
                   collaborer avec des marques prestigieuses et des artistes talentueux.
                 </p>
                 <p className="text-lg leading-relaxed">
                   Mon approche se base sur une compréhension profonde de la narration visuelle 
                   et une attention méticuleuse aux détails. Chaque projet est une opportunité 
-                  d&apos;explorer de nouveaux horizons créatifs.
+                  d'explorer de nouveaux horizons créatifs.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Aujourd&apos;hui, je continue d&apos;évoluer dans cet univers fascinant, toujours 
+                  Aujourd'hui, je continue d'évoluer dans cet univers fascinant, toujours 
                   à la recherche de nouvelles techniques et de nouvelles histoires à raconter.
                 </p>
               </div>
@@ -89,10 +90,15 @@ export default function About() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-square bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-2xl flex items-center justify-center">
+              <div className="aspect-square bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-3xl flex items-center justify-center">
                 <div className="text-center">
-                  <Camera className="w-24 h-24 text-red-500 mx-auto mb-4" />
-                  <p className="text-gray-400">Photo de profil</p>
+                  <Image
+                    src="/picture3.png"
+                    alt="Photo de profil"
+                    fill
+                    className="mx-auto mb-4 object-cover object-[0px_-90px] rounded-3xl"
+                    priority
+                  />
                 </div>
               </div>
             </motion.div>
