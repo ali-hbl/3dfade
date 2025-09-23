@@ -27,39 +27,33 @@ export default function Contact() {
     e.preventDefault();
 
     try {
-      const res = await fetch('/actions/sendEmail.js', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
 
-      const text = await res.text();
-      console.log('Réponse texte brute:', text);
+      const data = await res.json();
 
-      try {
-        const json = JSON.parse(text);
-        if (json.message) {
-          setIsSubmitted(true);
-          setTimeout(() => {
-            setIsSubmitted(false);
-            setFormData({
-              name: '',
-              email: '',
-              phone: '',
-              project: '',
-              budget: '',
-              message: '',
-            });
-          }, 3000);
-        } else {
-          alert('Erreur : ' + (json.error || 'Erreur non spécifiée'));
-        }
-      } catch {
-        alert('La réponse du serveur n’est pas un JSON valide.');
+      if (!res.ok) {
+        throw new Error(data.error || 'Erreur inconnue lors de l’envoi.');
       }
 
+      setIsSubmitted(true);
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          project: '',
+          budget: '',
+          message: '',
+        });
+      }, 3000);
     } catch (error) {
-      alert('Erreur lors de l’envoi du formulaire : ' + error);
+      const message = error instanceof Error ? error.message : 'Erreur inattendue lors de l’envoi.';
+      alert('Erreur lors de l’envoi du formulaire : ' + message);
     }
   };
 
