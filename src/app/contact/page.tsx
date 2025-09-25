@@ -99,7 +99,6 @@ export default function Contact() {
 
   const projectTypes = [
     'Publicité / Commercial',
-    'Mariage',
     'Vidéo Corporate',
     'Clip Musical',
     'Documentaire',
@@ -140,7 +139,7 @@ export default function Contact() {
       {/* Contact Info & Form Section */}
       <section className="py-20 bg-black">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-12">
             {/* Contact Information */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
