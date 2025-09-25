@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { ArrowUp, ExternalLink, Instagram, Mail, MapPin, Phone, Youtube } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -46,7 +45,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
             {/* Brand Section */}
             <div className="lg:col-span-1">
               <motion.div
@@ -57,17 +56,20 @@ const Footer = () => {
                 className="space-y-6"
               >
                 {/* Logo */}
-                 <Link href="/" className="flex items-center space-x-3">
+                <h3 className="text-lg font-semibold text-white mb-6">3rd Fade</h3>
+                {/* <Link href="/" className="flex items-center space-x-3 pt-1 lg:pt-2">
+                  <div className="relative w-48 sm:w-56 lg:w-64" style={{ aspectRatio: '1792 / 513' }}>
                     <div className="relative w-40" style={{ aspectRatio: "1792 / 513" }}>
-                      <Image
-                        src="/3RD_FADE_TRANSPARENT_CROPPED.png"
-                        alt="3rd Fade Logo"
-                        fill
-                        priority
-                      />
-                    </div>
-                  </Link>
-                  {/* <span className="text-2xl font-bold font-playfair text-white">3rd Fade</span> */}
+                    <Image
+                      src="/3RD_FADE_TRANSPARENT.png"
+                      alt="3rd Fade Logo"
+                      fill
+                      className="object-contain"
+                      priority
+                    />
+                  </div>
+                  </div>
+                </Link> */}
                 <p className="text-gray-400 leading-relaxed">
                   Créateur de rêves visuels. Je transforme vos idées en histoires 
                   cinématographiques captivantes qui marquent les esprits.
