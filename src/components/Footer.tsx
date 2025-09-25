@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowUp, ExternalLink, Instagram, Mail, MapPin, Phone, Youtube } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -55,17 +56,18 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="space-y-6"
               >
-                <Link href="/" className="flex items-center space-x-3">
-                  {/* <div className="relative w-40 h-40">
-                    <Image
-                      src="/3RD_FADE_TRANSPARENT.png"
-                      alt="3rd Fade Logo"
-                      fill
-                      className="object-contain"
-                    />
-                  </div> */}
-                  <span className="text-2xl font-bold font-playfair text-white">3rd Fade</span>
-                </Link>
+                {/* Logo */}
+                 <Link href="/" className="flex items-center space-x-3">
+                    <div className="relative w-40" style={{ aspectRatio: "1792 / 513" }}>
+                      <Image
+                        src="/3RD_FADE_TRANSPARENT_CROPPED.png"
+                        alt="3rd Fade Logo"
+                        fill
+                        priority
+                      />
+                    </div>
+                  </Link>
+                  {/* <span className="text-2xl font-bold font-playfair text-white">3rd Fade</span> */}
                 <p className="text-gray-400 leading-relaxed">
                   Créateur de rêves visuels. Je transforme vos idées en histoires 
                   cinématographiques captivantes qui marquent les esprits.
