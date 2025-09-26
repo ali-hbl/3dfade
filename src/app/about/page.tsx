@@ -96,7 +96,7 @@ export default function About() {
                     src="/picture3.png"
                     alt="Photo de profil"
                     fill
-                    className="mx-auto mb-4 object-cover object-[0px_-90px] rounded-3xl"
+                    className="mx-auto mb-4 object-cover object-[0px_-80px] sm:object-[0px_-40px] rounded-3xl"
                     priority
                   />
                 </div>
